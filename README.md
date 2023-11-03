@@ -20,16 +20,12 @@ Instale as dependências necessárias: npm install
 O servidor Express possui os seguintes endpoints disponíveis:
 
 1. Listar todos os veículos (GET /carros)
-Descrição: Retorna uma lista de todos os veículos armazenados.
 
 2. Adicionar um novo veículo (POST /carros)
-Descrição: Adiciona um novo veículo com base nos dados fornecidos no corpo da solicitação.
 
 3. Atualizar informações de um veículo (PUT /carros/:id)
-Descrição: Atualiza os detalhes de um veículo específico com base no ID fornecido na URL.
 
 4. Excluir um veículo (DELETE /carros/:id)
-Descrição: Exclui um veículo específico com base no ID fornecido na URL.
 
 ## Observações sobre a Configuração
 Devido a problemas com o Docker, os dados de veículos são armazenados em um arquivo JSON local (carros.json). Isso é uma solução temporária e pode ser substituída por um banco de dados adequado quando o Docker estiver configurado corretamente.
