@@ -1,10 +1,12 @@
-# Documentação do CRUD de Veículos usando Express
+# Sobre
 Este projeto implementa um sistema de gerenciamento de veículos com funcionalidade CRUD (Create, Read, Update, Delete) usando Node.js e Express. O objetivo é fornecer uma API para adicionar, visualizar, atualizar e excluir informações de veículos.
+
+---
 
 ## Tecnologias Usadas
 - Node.js
 + Express
-- JSON (para armazenamento de dados)
+- Sequelize
 + HTML/CSS/JavaScript
 
 ## Instalação
@@ -14,7 +16,7 @@ Antes de executar o projeto, certifique-se de ter o Node.js instalado em seu sis
 
 + Abra um terminal e navegue até o diretório raiz do projeto.
 
-- Instale as dependências necessárias: npm install
+- Instale as dependências necessárias: $ npm install
 
 ## Endpoints da API
 O servidor Express possui os seguintes endpoints disponíveis:
