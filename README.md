@@ -5,7 +5,7 @@ Este projeto implementa um sistema de gerenciamento de veículos com funcionalid
 - Node.js
 + Express
 - JSON (para armazenamento de dados)
-+ HTML/CSS/JavaScript (front-end)
++ HTML/CSS/JavaScript
 
 ## Instalação
 Antes de executar o projeto, certifique-se de ter o Node.js instalado em seu sistema. Para configurar e executar o servidor Express, siga as etapas:
