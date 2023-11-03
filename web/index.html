@@ -37,41 +37,7 @@
       <button type="submit">Adicionar</button>
     </form>
 
-    <script>
-      const carrosList = document.getElementById("carros-list");
-      const carrosForm = document.getElementById("carros-form");
-
-      function listarCarros() {
-        fetch("/carros")
-          .then((response) => response.json())
-          .then((carros) => {
-            carrosList.innerHTML = carros
-              .map(
-                (carros) =>
-                  `<li>${carros.locadora} - ${carros.modelo} (${carros.marca})</li>`
-              )
-              .join("");
-          });
-      }
-
-      listarCarros();
-
-      // Evento de envio do formulário
-      carrosForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        const formData = new FormData(carrosForm);
-
-        fetch("/carros", {
-          method: "POST",
-          body: JSON.stringify(Object.fromEntries(formData)),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }).then(() => {
-          listarCarros();
-          carrosForm.reset();
-        });
-      });
-    </script>
+    <ul id="carros-list"></ul>
+    <script src="script.js"></script>
   </body>
 </html>
