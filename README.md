@@ -10,11 +10,11 @@ Este projeto implementa um sistema de gerenciamento de veículos com funcionalid
 ## Instalação
 Antes de executar o projeto, certifique-se de ter o Node.js instalado em seu sistema. Para configurar e executar o servidor Express, siga as etapas:
 
-Clone o repositório do projeto ou crie seus próprios arquivos.
+- Clone o repositório do projeto ou crie seus próprios arquivos.
 
-Abra um terminal e navegue até o diretório raiz do projeto.
++ Abra um terminal e navegue até o diretório raiz do projeto.
 
-Instale as dependências necessárias: npm install
+- Instale as dependências necessárias: npm install
 
 ## Endpoints da API
 O servidor Express possui os seguintes endpoints disponíveis:
