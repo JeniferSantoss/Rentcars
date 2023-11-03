@@ -33,7 +33,7 @@ Antes de executar o projeto, certifique-se de ter o Node.js instalado em seu sis
 ```
  $ npm install
 ```
-Execute o servidor Express:
++ Execute o servidor Express:
 ```
 node server.js
 ```
