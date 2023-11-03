@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD de Veículos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Locadora de Veículos</h1>
+    <h2>Adicionar Novo Veículo</h2>
+    <form id="carros-list">
+      <label for="locadora">Locadora:</label>
+      <input type="text" id="locadora" name="locadora" required />
+
+      <label for="modelo">Modelo:</label>
+      <input type="text" id="modelo" name="modelo" required />
+
+      <label for="marca">Marca:</label>
+      <input type="text" id="marca" name="marca" required />
+
+      <label for="ano">Ano:</label>
+      <input type="number" id="ano" name="ano" required />
+
+      <label for="motor">Motor:</label>
+      <input type="text" id="motor" name="motor" required />
+
+      <label for="portas">Portas:</label>
+      <input type="number" id="portas" name="portas" required />
+
+      <label for="cambio">Câmbio:</label>
+      <input type="text" id="cambio" name="cambio" required />
+
+      <label for="ar_condicionado">Ar Condicionado:</label>
+      <input type="text" id="ar_condicionado" name="ar_condicionado" required />
+
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <script>
+      const carrosList = document.getElementById("carros-list");
+      const carrosForm = document.getElementById("carros-form");
+
+      function listarCarros() {
+        fetch("/carros")
+          .then((response) => response.json())
+          .then((carros) => {
+            carrosList.innerHTML = carros
+              .map(
+                (carros) =>
+                  `<li>${carros.locadora} - ${carros.modelo} (${carros.marca})</li>`
+              )
+              .join("");
+          });
+      }
+
+      listarCarros();
+
+      // Evento de envio do formulário
+      carrosForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(carrosForm);
+
+        fetch("/carros", {
+          method: "POST",
+          body: JSON.stringify(Object.fromEntries(formData)),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }).then(() => {
+          listarCarros();
+          carrosForm.reset();
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

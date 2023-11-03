@@ -1,0 +1,53 @@
+[
+  {
+    "id": "cd99557a-8750-463e-a3fa-7f7bd9ecf37a",
+    "locadora": "Movida",
+    "modelo": "Virtus",
+    "marca": "Volkswagen",
+    "ano": 2023,
+    "motor": "1.0",
+    "portas": 4,
+    "cambio": "Automatico",
+    "ar_condicionado": true,
+    "updatedAt": "2023-10-23T14:37:35.917Z",
+    "createdAt": "2023-10-23T14:37:35.917Z",
+    "dependencies": {
+      "espress": "^0.0.0",
+      "express": "^4.18.2"
+    }
+  },
+  {
+    "id": "e7a33e6c-6704-48d3-bcb0-9d5a7a2a10a2",
+    "locadora": "Hertz",
+    "modelo": "Corolla",
+    "marca": "Toyota",
+    "ano": 2023,
+    "motor": "1.8",
+    "portas": 4,
+    "cambio": "Automático",
+    "ar_condicionado": true,
+    "updatedAt": "2023-10-23T15:42:18.326Z",
+    "createdAt": "2023-10-23T15:42:18.326Z",
+    "dependencies": {
+      "espress": "^0.0.0",
+      "express": "^4.18.2"
+    }
+  },
+  {
+    "id": "f7934a6d-3eae-4c2f-8e75-12d5e902dc9e",
+    "locadora": "Localiza",
+    "modelo": "Onix",
+    "marca": "Chevrolet",
+    "ano": 2023,
+    "motor": "1.4",
+    "portas": 4,
+    "cambio": "Automático",
+    "ar_condicionado": true,
+    "updatedAt": "2023-10-23T16:50:11.541Z",
+    "createdAt": "2023-10-23T16:50:11.541Z",
+    "dependencies": {
+      "espress": "^0.0.0",
+      "express": "^4.18.2"
+    }
+  }
+]
