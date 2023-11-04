@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="https://www.rentcars.com/pt-br/localidades/brasil/curitiba-parana?gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_mjxqkJhPHzsIyoGkPGsIX80b23sBX-dYDC29bZ8luXjfuz19Umm-4aAvMmEALw_wcB"> Rentcars </a>
+    <a href="https://www.rentcars.com/pt-br/localidades/brasil/curitiba-parana?gclid=Cj0KCQjwtJKqBhCaARIsAN_yS_mjxqkJhPHzsIyoGkPGsIX80b23sBX-dYDC29bZ8luXjfuz19Umm-4aAvMmEALw_wcB"target="_blank"> Rentcars </a>
 </h1>
 
 <p align="center">
@@ -15,9 +15,9 @@ Este projeto implementa um sistema de gerenciamento de veículos com funcionalid
 ---
 
 ## Tecnologias Usadas
-- <a href="https://nodejs.org/en"> Node.js </a>
-+ <a href="https://expressjs.com/pt-br/">Express </a>
-- <a href="https://sequelize.org">Sequelize </a>
+- <a href="https://nodejs.org/en" target="_blank"> Node.js </a>
++ <a href="https://expressjs.com/pt-br/" target="_blank">Express </a>
+- <a href="https://sequelize.org" target="_blank">Sequelize </a>
 + HTML/CSS/JavaScript
 
 ---
