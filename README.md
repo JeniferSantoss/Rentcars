@@ -9,7 +9,7 @@
  <a href="#license">Endpoints da API</a> 
 </p>
 
-# Sobre
+# <a href="#about">Sobre</a>
 Este projeto implementa um sistema de gerenciamento de veículos com funcionalidade CRUD (Create, Read, Update, Delete) usando Node.js e Express. O objetivo é fornecer uma API para adicionar, visualizar, atualizar e excluir informações de veículos.
 
 ---
