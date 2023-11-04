@@ -11,8 +11,8 @@ function carregarDetalhesDoVeiculoParaEdicao(id) {
       document.getElementById("motorEdit").value = veiculo.motor;
       document.getElementById("portasEdit").value = veiculo.portas;
       document.getElementById("cambioEdit").value = veiculo.cambio;
-      document.getElementById("ar_condicionadoEdit").value =
-        veiculo.ar_condicionado;
+      document.getElementById("ar_condicionadoEdit").checked =
+        veiculo.ar_condicionado === "Sim";
     })
     .catch((error) => {
       console.error(
@@ -24,6 +24,10 @@ function carregarDetalhesDoVeiculoParaEdicao(id) {
 carrosEdit.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(carrosEdit);
+
+  const arCondicionadoCheckbox = document.getElementById("ar_condicionadoEdit");
+  const valorArCondicionado = arCondicionadoCheckbox.checked ? "Sim" : "Não";
+  formData.set("ar_condicionado", valorArCondicionado);
 
   fetch(`http://127.0.0.1:3000/carros/${id}`, {
     method: "PUT",

@@ -37,7 +37,9 @@ carrosList.addEventListener("click", (event) => {
 carrosForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(carrosForm);
+  const arCondicionado = document.getElementById("ar_condicionado").checked;
 
+  formData.set("ar_condicionado", arCondicionado);
   fetch("http://127.0.0.1:3000/carros", {
     method: "POST",
     body: JSON.stringify(Object.fromEntries(formData)),
