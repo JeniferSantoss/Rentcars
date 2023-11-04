@@ -14,7 +14,7 @@ Este projeto implementa um sistema de gerenciamento de veículos com funcionalid
 
 ---
 
-## Tecnologias Usadas
+## [Tecnologias Usadas](#how-it-works)
 - <a href="https://nodejs.org/en"> Node.js </a>
 + <a href="https://expressjs.com/pt-br/">Express </a>
 - <a href="https://sequelize.org">Sequelize </a>
